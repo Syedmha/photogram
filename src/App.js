@@ -10,7 +10,6 @@ function App() {
   return (
     <div className="App">
       <Title/>
-      <hr></hr>
       <UploadForm />
       <ImageGrid setSelectedImg={setSelectedImg} />
       { selectedImg && <Model selectedImg={selectedImg} setSelectedImg={setSelectedImg}/> }

@@ -1,36 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
 
 :root {
-  --primary: #f05945;
-  --secondary: #5eaaa8;
-  --error: #ff4a4a;
+  --primary: #ce1212;
+  --secondary: #1b1717;
+  --error: #810000;
 }
 
 /* base styles & title */
 body {
   font-family: "Poppins", sans-serif;
   color: var(--secondary);
-  background-color: #f7f3e9;
+  background-color: #eeebdd;
 }
 .App {
+  height: 0;
   max-width: 960px;
   margin: 0 auto;
 }
 .title h1 {
-  color: var(--primary);
+  color: #eeebdd;
   font-size: 1.2rem;
   letter-spacing: 2px;
   font-weight: normal;
-  background-color: #a3d2ca;
-  margin: 0;
+  background-color: #810000;
+  padding: 1rem;
+  margin-top: 0;
 }
-.title h2,
 .title p {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 0;
+  margin-bottom: 3rem;
+}
+.title h3 {
   text-align: center;
 }
 .title h2 {
   margin-top: 60px;
   font-size: 2.6rem;
+  text-align: center;
+  margin-bottom: 0rem;
 }
 
 /* upload form styles */
@@ -45,12 +54,12 @@ label input {
 }
 label {
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border: 1px solid var(--primary);
   border-radius: 50%;
   margin: 10px auto;
-  line-height: 30px;
+  line-height: 40px;
   color: var(--primary);
   font-weight: bold;
   font-size: 24px;
@@ -109,11 +118,30 @@ label:hover {
   background: rgb(0, 0, 0, 0.5);
 }
 
+.backdrop-btn {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-left: 80%;
+  margin-top: 5px;
+  border: 1px solid var(--primary);
+  border-radius: 50%;
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.backdrop-btn:hover {
+  background: var(--primary);
+  color: white;
+}
+
 .backdrop img {
   display: block;
   width: 60%;
   height: 80%;
   margin: 60px auto;
+  margin-top: 0;
   box-shadow: 3px, 5px, 7px rgb(0, 0, 0, 0.5);
   border: 3px solid white;
 }
